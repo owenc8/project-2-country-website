@@ -3,25 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Country Website</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
+
+        
+            <!-- <p>icon</p> -->
+       
+
+       
+            <nav class="site-nav">
+                <a href="#">Food</a>
+                <a href="#">Places</a>
+                <a href="#">Culture</a>
+                <a href="#">Credits</a>
+            </nav>
+        
 
 
     </header>
 
     <main>
 
-        <section>
+        <section class="banner">
+    
+            <h1>Singapore</h1>
 
-            
+            <video src="media/198477-907598465_tiny.mp4" muted loop autoplay></video>
+             <!-- https://pixabay.com/videos/ferris-wheel-singapore-flyer-casino-198477/ -->
+             <!-- other videos: https://www.pexels.com/search/videos/Singapore/ -->
         </section>
 
+
+        <section class="about">
+            <h2>Little Red Dot</h2>
+            <p>Singapore, officially the Republic of Singapore, is an island country and city-state in Southeast Asia. The country's territory comprises one main island, 63 satellite islands and islets, and one outlying islet</p><cite>https://en.wikipedia.org/wiki/Singapore</cite>
+
+        </section>
+
+        <section class="cards">
+
+            <h2>Things to explore</h2>
+                <!-- three column grid -->
+            
+                <div class="three-column">
+
+                    <article>
+                        <div class="imgWrapper">
+                            <a class="imglink" href="food.html">
+                                <img src="images/hawker-center.jpg" alt="hawker center">
+                            </a>
+                        </div>
+                        
+                        <p>Food</p>
+                        <!-- https://www.pexels.com/photo/bustling-singapore-hawker-center-dining-scene-30210592/ -->
+
+                    </article>
+
+                    <article>
+                         <div class="imgWrapper">
+                             <a class="imglink" href="places.html">
+                                <img src="images/botanical-gardens.jpg" alt="singapore sky tree and gardens" >
+                            </a>
+                         </div>
+
+                       
+                        <p>Places</p>
+                         <!-- https://www.pexels.com/photo/marina-bay-sands-singapore-1907050/ -->
+
+                    </article>
+
+                    <article>
+                        
+                        <div class="imgWrapper">
+                            <a class="imglink" href="culture.html">
+    
+                                <img src="images/buddha-tooth-relic-temple.jpg" alt="buddha tooth relic temple at night">
+            
+                            </a>
+                        </div>
+
+                        <p>Culture</p>
+                         <!-- https://www.pexels.com/photo/view-of-illuminated-city-at-night-315403/ -->
+                    </article>
+
+
+
+                </div>
+
+
+        </section>
 
     </main>
 
     <footer>
+        <p>For educational purposes only</p>
 
 
     </footer>
