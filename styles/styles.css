@@ -122,6 +122,7 @@ header{
 	width: fit-content;
 	margin: 0 auto;
     font-size: 2rem;
+	z-index: 1;
 }
 
 .banner video{
@@ -130,6 +131,17 @@ header{
 	height: 20rem;
 	width:100%;
 	object-position: bottom;
+}
+
+.banner img{
+	display: block;
+	object-fit: cover;
+	height: 20rem;
+	width:100%;
+	object-position: center;
+	filter: brightness(50%);
+
+
 }
 
 .imgWrapper{
