@@ -157,6 +157,7 @@ header{
 	width:100%;
 	object-position: center;
 	filter: brightness(50%);
+	margin-bottom: 2rem;
 
 
 }
@@ -170,11 +171,8 @@ header{
 
 /* https://www.w3schools.com/css/css3_object-fit.asp */
 .image-container {
-  
   margin: 1rem;
   position: relative;
-  
- 
   
 }
 
@@ -184,7 +182,7 @@ header{
 
 .image-container:hover img{
 	transition: .5s ease;
-	filter: brightness(70%);
+	filter: brightness(40%);
 
 }
 .overlay{
@@ -193,15 +191,16 @@ header{
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 50%;
+	top:30%;
 	
 	margin: 0 auto;
 	
 }
 
-.overlay p{
-	background-color: #000000;
+.overlay p,h2{
 	color: #ffffff;
+	margin: 0 2rem;
+	bottom:2rem;
 }
 
 .image-container:hover .overlay{
@@ -265,6 +264,7 @@ footer{
 	
 	blockquote{
 		width: 30%;
+		
 	}
 	.three-column{
 		display: grid;
