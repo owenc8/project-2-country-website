@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"  content="A website about Singapore, its great food scene and, places you can visit" />
     <title>Country Website</title>
     
     <!-- css -->
@@ -26,9 +28,10 @@
 
        
             <nav class="site-nav">
+                 <a href="index.html">Home</a>
                 <a href="food.html">Food</a>
                 <a href="places.html">Places</a>
-                <a href="culture.html">Culture</a>
+                
                 <a href="credits.html">Credits</a>
             </nav>
         
@@ -59,50 +62,49 @@
             <h2>Things to explore</h2>
                 <!-- three column grid -->
             
-                <div class="three-column">
+                <div class="two-column">
 
                     <article>
-                        <div class="imgWrapper">
+                        <div class="image-container">
                             <a class="imglink" href="food.html">
                                 <img src="images/hawker-center.jpg" alt="hawker center">
                             </a>
-                        </div>
-                        
-                        <p>Food</p>
-                        <!-- https://www.pexels.com/photo/bustling-singapore-hawker-center-dining-scene-30210592/ -->
 
+                            <div class="overlay">
+                                <h2>Food</h2>
+                                
+                            </div>
+                        </div>
+                     
                     </article>
 
                     <article>
-                         <div class="imgWrapper">
+                         <div class="image-container">
                              <a class="imglink" href="places.html">
                                 <img src="images/botanical-gardens.jpg" alt="singapore sky tree and gardens" >
                             </a>
                          </div>
 
-                       
-                        <p>Places</p>
-                         <!-- https://www.pexels.com/photo/marina-bay-sands-singapore-1907050/ -->
-
                     </article>
-
-                    <article>
-                        
-                        <div class="imgWrapper">
-                            <a class="imglink" href="culture.html">
-    
-                                <img src="images/buddha-tooth-relic-temple.jpg" alt="buddha tooth relic temple at night">
-            
-                            </a>
-                        </div>
-
-                        <p>Culture</p>
-                         <!-- https://www.pexels.com/photo/view-of-illuminated-city-at-night-315403/ -->
-                    </article>
-
-
 
                 </div>
+
+
+                <!-- style the form -->
+                <form action="/my-handling-form-page" method="post">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" />
+                    </p>
+                    <p>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </p>
+                    <p>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </p>
+                </form>
 
 
         </section>

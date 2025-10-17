@@ -36,6 +36,9 @@ h4,
 h5,
 h6 {
 	font-family: 'lato', 'arial','sans-serif';
+	color: #000000;
+	text-align:center ;
+	
 }
 
 p {
@@ -64,6 +67,7 @@ figure {
 table {
 	border-collapse: collapse;
 	border: 2px solid #000000;
+	margin: 0 auto;
 	text-align: center;
 }
 th,td{
@@ -80,6 +84,7 @@ blockquote{
 blockquote h2{
 	margin: 0;
 	font-weight: 1000;
+	font-size: 2.5rem;
 }
 
 /* Links
@@ -163,7 +168,7 @@ header{
 }
 
 .imgWrapper{
-	height: 300px;
+	/* height: 300px; */
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -173,6 +178,9 @@ header{
 .image-container {
   margin: 1rem;
   position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 20px;
   
 }
 
@@ -197,10 +205,11 @@ header{
 	
 }
 
-.overlay p,h2{
+.overlay p, .overlay h2{
 	color: #ffffff;
 	margin: 0 2rem;
 	bottom:2rem;
+	text-align: left;
 }
 
 .image-container:hover .overlay{
@@ -237,9 +246,6 @@ article img:hover{
 	
 }
 
-.cards, .about{
-	margin: 2rem;
-}
 
 /* Footer
 --------------------------------------------- */
@@ -266,9 +272,9 @@ footer{
 		width: 30%;
 		
 	}
-	.three-column{
+	.two-column{
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		column-gap: 2rem;
 		margin: 3rem;
 	}
@@ -277,7 +283,7 @@ footer{
 		
 		display: grid;
 		grid-template-columns: repeat(3, 20rem);
-		grid-template-rows: repeat(3, 20rem);
+		grid-template-rows: repeat(2, 20rem);
 		gap: 1rem;
 		justify-content: center;
 		
