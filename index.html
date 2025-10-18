@@ -44,6 +44,7 @@
         <section class="banner">
     
             <h1>Singapore</h1>
+            <p>&#8681;</p>
 
             <video src="media/198477-907598465_tiny.mp4" muted loop autoplay></video>
              <!-- https://pixabay.com/videos/ferris-wheel-singapore-flyer-casino-198477/ -->
@@ -82,6 +83,11 @@
                          <div class="image-container">
                              <a class="imglink" href="places.html">
                                 <img src="images/botanical-gardens.jpg" alt="singapore sky tree and gardens" >
+
+                                <div class="overlay">
+                                    <h2>Sightseeing</h2>
+                                
+                                </div>
                             </a>
                          </div>
 
@@ -89,25 +95,27 @@
 
                 </div>
 
+        </section>
+
+        
+                <h2>Contact Us</h2>
 
                 <!-- style the form -->
                 <form action="/my-handling-form-page" method="post">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name" />
-                    </p>
-                    <p>
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" />
-                    </p>
-                    <p>
-                        <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
-                    </p>
+                    
+                        <label for="name">Name:</label> <br>
+                        <input type="text" id="name" name="user_name" placeholder="Jane"/><br>
+                  
+                 
+                        <label for="mail">Email:</label><br>
+                        <input type="email" id="mail" name="user_email" placeholder="Doe"/><br>
+                   
+                   
+                        <label for="msg">Message:</label><br>
+                        <textarea id="msg" name="user_message"></textarea><br>
+                        <input type="submit" value="Submit">
+                  
                 </form>
-
-
-        </section>
 
     </main>
 

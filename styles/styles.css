@@ -41,30 +41,11 @@ h6 {
 	
 }
 
-p {
-	
-}
-
-
 /* Elements
 --------------------------------------------- */
-ul {
-	
-}
-
-ol {
-	
-}
-
-dl {
-	
-}
-
-figure {
-	
-}
 
 table {
+	width: 80%;
 	border-collapse: collapse;
 	border: 2px solid #000000;
 	margin: 0 auto;
@@ -122,7 +103,7 @@ header{
 	background-color: black;
 	position: fixed;
 	bottom: 0;
-	padding: 1rem;
+	padding: 1rem 0rem;
 	width: 100vw;
 	z-index: 100;
 	display: flex;
@@ -145,6 +126,17 @@ header{
 	margin: 0 auto;
     font-size: 2rem;
 	z-index: 1;
+}
+
+.banner p{
+	position: absolute;
+	font-size: 3rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: fit-content;
+	color: #ffffff;
+	bottom: 30%;
 }
 
 .banner video{
@@ -176,19 +168,21 @@ header{
 
 /* https://www.w3schools.com/css/css3_object-fit.asp */
 .image-container {
-  margin: 1rem;
+  
   position: relative;
   overflow: hidden;
-  height: 100%;
+  height: 20rem;
   border-radius: 20px;
   
 }
 
-.image-container img{
+/* .image-container img{
 	backface-visibility: hidden;
-}
+} */
 
-.image-container:hover img{
+.image-container:hover img, 
+.image-container:focus img, 
+.image-container:active img{
 	transition: .5s ease;
 	filter: brightness(40%);
 
@@ -200,9 +194,7 @@ header{
 	left: 0;
 	right: 0;
 	top:30%;
-	
 	margin: 0 auto;
-	
 }
 
 .overlay p, .overlay h2{
@@ -210,6 +202,11 @@ header{
 	margin: 0 2rem;
 	bottom:2rem;
 	text-align: left;
+}
+
+article .overlay h2{
+	text-align: center;
+	font-size: 3rem;
 }
 
 .image-container:hover .overlay{
@@ -225,19 +222,11 @@ header{
 
 article img{
 	display: block;
-	
 	height: 400px;
 	width: auto;
 	object-fit: cover;
 	object-position: center;
 	top: 0;
-	
-
-	transition: 0.8s ease;
-}
-
-article img:hover{
-	transform: scale(1.2);
 	
 }
 
@@ -246,18 +235,70 @@ article img:hover{
 	
 }
 
+td a, td a:visited{
+	color: #000000;
+	text-decoration: underline;
+}
+
+td a:hover, td a:focus, td a:active{
+	color: #850000;
+	background-color: transparent;
+	transition: ease-in-out .3s;
+}
+
 
 /* Footer
 --------------------------------------------- */
 footer{
 	display: flex;
 	justify-content: center;
-	height: 10rem;
+	width: 100%;
+	height: 8rem;
 	background-color: #470000;
 	color: #ffffff;
+	margin-top: 2rem;
+}
+
+.three-by-three{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	gap: 1rem;
+	
+	justify-content: center;
+	margin: 0 2rem;
+		
+		
+}
+
+.cards{
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+.cards article{
+	margin: 1rem 0;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+	justify-content: center;
+}
+form input, textarea{
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	
 }
 
 /* media queries */
+
+
 @media screen and (min-width: 45em){
 	header{
 		position: sticky;
@@ -267,6 +308,11 @@ footer{
 	.banner h1{
 		font-size: 4rem;
 	}
+
+	.banner p{
+		
+		bottom: 40%;
+	}
 	
 	blockquote{
 		width: 30%;
@@ -275,6 +321,7 @@ footer{
 	.two-column{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		row-gap: 1rem;
 		column-gap: 2rem;
 		margin: 3rem;
 	}
@@ -282,10 +329,12 @@ footer{
 	.three-by-three{
 		
 		display: grid;
-		grid-template-columns: repeat(3, 20rem);
-		grid-template-rows: repeat(2, 20rem);
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
 		gap: 1rem;
+		
 		justify-content: center;
+		margin: 0 6rem;
 		
 	}
 
@@ -294,10 +343,16 @@ footer{
 		height: 40rem;
 	}
 	.cards{
-		margin: 6rem;
+		width: 60%;
+		margin: 0 auto;
 	}	
 
 	.about{
 		margin:6rem 30vw;
 	}
+
+	form{
+		width: 300px;
+	}
+
 }
