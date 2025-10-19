@@ -23,7 +23,11 @@ h6 {
 --------------------------------------------- */
 
 table {
-	width: 80%;
+	table-layout: fixed;
+	overflow-wrap: break-word;
+	
+	width: 100%;
+	
 	border-collapse: collapse;
 	border: 2px solid #000000;
 	margin: 0 auto;
@@ -287,6 +291,10 @@ footer{
 
 	form{
 		width: 300px;
+	}
+
+	table{
+		width: 40%;
 	}
 
 }
